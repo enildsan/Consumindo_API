@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+</head>
+<body>
+<div><H1>Batalha Pokémon</H1></div> 
+
+<input type="text" id="campoPK" placeholder="Digite Pokemon 1">
+<button onclick="carregarPokemon1()">Carregar Pokémon 1</button>
+<div>
+    <h3>Pokemon 1:</h3>
+    <p>Nome: <span id="nomePK"></span></p>
+    <p>Id: <span id="idPK"></span></p>
+    <p>Experiência: <span id="experienciaPK"></span></p>
+    <img src="" id="imgPK" alt="Pokemon 1 Image">
+    
+    
+</div>
+
+<input type="text" id="campoPK2" placeholder="Digite Pokemon 2">
+<button onclick="carregarPokemon2()">Cargegar Pokémon 2</button>
+<div>
+    <h3>Pokemon 2:</h3>
+    <p>Nome: <span id="nomePK2"></span></p>
+    <p>Id: <span id="idPK2"></span></p>
+    <p>Experiência: <span id="experienciaPK2"></span></p>
+    <img src="" id="imgPK2" alt="Pokemon 2 Image">
+</div>
+
+<button onclick="compararExperiencias()">Comparando experiências</button>
+<p id="resultadoComparacao"></p>
+<script src="script.js"></script>
+<script src="style.css"></script>
+    
+</body>
+</html>
