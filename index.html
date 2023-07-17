@@ -7,34 +7,48 @@
     <title>Pokémon</title>
 </head>
 <body>
-    <div class = bgPK>
-        <div><H1>Batalha Pokémon</H1></div> 
+    <header>
+        <h1>Batalha Pokémon</h1>
+        
+    </header>
 
-        <input type="text" id="campoPK" placeholder="Digite Pokemon 1">
-        <button onclick="carregarPokemon1()">Carregar Pokémon 1</button>
-        <div>
-            <h3>Pokemon 1:</h3>
-            <p>Nome: <span id="nomePK"></span></p>
-            <p>Id: <span id="idPK"></span></p>
-            <p>Experiência: <span id="experienciaPK"></span></p>
-            <img src="" id="imgPK" alt="Pokemon 1 Image">
+    <main>
+        <div class="bgPK">
             
-            
+
+            <div class="pokemon-container">
+                <fieldset>
+                    <legend>Carregar Pokémon 1</legend>
+                    <input type="text" id="campoPK" placeholder="Digite Pokémon 1">
+                    <button onclick="carregarPokemon1()">Carregar</button>
+                </fieldset>
+                <h3>Pokémon 1:</h3>
+                <p>Nome: <span id="nomePK"></span></p>
+                <p>Id: <span id="idPK"></span></p>
+                <p>Experiência: <span id="experienciaPK"></span></p>
+                <img src="" id="imgPK" alt="Pokemon 1 Image">
+            </div>
+
+            <div class="pokemon-container">
+                <fieldset>
+                    <legend>Carregar Pokémon 2</legend>
+                    <input type="text" id="campoPK2" placeholder="Digite Pokémon 2">
+                    <button onclick="carregarPokemon2()">Carregar</button>
+                </fieldset>
+                <h3>Pokémon 2:</h3>
+                <p>Nome: <span id="nomePK2"></span></p>
+                <p>Id: <span id="idPK2"></span></p>
+                <p>Experiência: <span id="experienciaPK2"></span></p>
+                <img src="" id="imgPK2" alt="Pokemon 2 Image">
+            </div>
         </div>
-    </div>
-<input type="text" id="campoPK2" placeholder="Digite Pokemon 2">
-<button onclick="carregarPokemon2()">Cargegar Pokémon 2</button>
-<div>
-    <h3>Pokemon 2:</h3>
-    <p>Nome: <span id="nomePK2"></span></p>
-    <p>Id: <span id="idPK2"></span></p>
-    <p>Experiência: <span id="experienciaPK2"></span></p>
-    <img src="" id="imgPK2" alt="Pokemon 2 Image">
-</div>
 
-<button onclick="compararExperiencias()">Iniciar Batalha</button>
-<p id="resultadoComparacao"></p>
-<script src="script.js"></script>
+        <div class="iniciar-batalha">
+            <button class="start-battle-btn" onclick="compararExperiencias()">Iniciar Batalha</button>
+            <p id="resultadoComparacao"></p>
+        </div>
+    </main>
 
+    <script src="script.js"></script>
 </body>
 </html>
