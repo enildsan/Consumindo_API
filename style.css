@@ -3,6 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-image: url('pokeball.jpg');
+ 
 }
 
 header {
@@ -29,23 +31,14 @@ legend {
   font-weight: bold;
 }
 
-
 .pokemon-container {
-  border: 2px solid #afeeee; 
+  border: 2px solid #0a5252; 
   padding: 10px;
   margin: 10px;
   text-align: center;
   flex-basis: 200px;
-  color: #0f140e; 
-}
-
-.iniciar-batalha {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  display: block;
-  margin: 20px auto;
+  color: #f8fcf7; 
+  
 }
 
 .bgPK {
@@ -58,23 +51,18 @@ img {
   max-width: 200px;
 }
 
-
 .iniciar-batalha {
+  position: absolute;
+  bottom: 0;
   padding: 10px;
-  margin: 10px;
+  margin: 5%;
   text-align: center;
   flex-basis: 200px;
-  background-color: #07ecec;
+  background-color: #084646;
   color: #fff; 
   border: none;
   cursor: pointer;
 }
-
-
-.iniciar-batalha:hover {
-  background-color: #00c9c9;
+#resultadoComparacao {
+  color: white;
 }
-.iniciar-batalha:focus {
-  outline: none; 
-}
-
