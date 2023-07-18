@@ -10,7 +10,7 @@
     <header>
         
         <h2>Batalha Pokémon</h2>
-        
+       
     </header>
 
     <main>
@@ -20,7 +20,7 @@
             <div class="pokemon-container">
                 <fieldset>
                     <legend>Carregar Pokémon 1</legend>
-                    <input type="text" id="campoPK" placeholder="Digite Pokémon 1">
+                    <input type="text" id="campoPK" placeholder="Digite nome ou id PK1">
                     <button onclick="carregarPokemon1()">Carregar</button>
                 </fieldset>
                 <h3>Pokémon 1:</h3>
@@ -33,7 +33,7 @@
             <div class="pokemon-container">
                 <fieldset>
                     <legend>Carregar Pokémon 2</legend>
-                    <input type="text" id="campoPK2" placeholder="Digite Pokémon 2">
+                    <input type="text" id="campoPK2" placeholder="Digite nome ou id PK2">
                     <button onclick="carregarPokemon2()">Carregar</button>
                 </fieldset>
                 <h3>Pokémon 2:</h3>
@@ -45,7 +45,10 @@
         </div>
 
        <button class="iniciar-batalha" onclick="compararExperiencias()">Iniciar Batalha</button>
+        <div class="resul"> 
             <p id="resultadoComparacao"></p>
+        
+        </div>
         
     </main>
 
